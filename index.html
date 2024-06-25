@@ -3,72 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ledger Simplified</title>
+    <title>Ledger Hardware Wallet Comparison</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         header {
             background: #000;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px;
             text-align: center;
         }
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
+            text-align: center;
         }
         nav ul li {
             display: inline;
-            margin: 0 10px;
+            margin: 0 15px;
         }
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-weight: bold;
         }
         .hero {
-            background: #f4f4f4;
+            background: #fff;
             padding: 50px 20px;
             text-align: center;
-        }
-        .hero img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
         }
         .hero h1 {
             margin: 0;
             font-size: 2.5em;
         }
-        .products {
+        .comparison {
             padding: 20px;
             text-align: center;
         }
-        .products h2 {
+        .comparison h2 {
+            margin: 20px 0;
+            font-size: 2em;
+        }
+        .table-container {
+            display: flex;
+            justify-content: center;
             margin: 20px 0;
         }
-        .product {
-            display: inline-block;
-            margin: 20px;
-            padding: 10px;
+        .table {
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 1000px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .table th, .table td {
             border: 1px solid #ddd;
-            width: 250px;
+            padding: 15px;
+            text-align: center;
         }
-        .product img {
-            width: 100%;
+        .table th {
+            background-color: #007BFF;
+            color: white;
+        }
+        .table td img {
+            width: 150px;
             height: auto;
-        }
-        .product a {
-            text-decoration: none;
-            color: #000;
         }
         footer {
             background: #000;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px;
         }
     </style>
 </head>
@@ -86,22 +96,59 @@
     </header>
 
     <div class="hero">
-        <img src="https://www.ledger.com/wp-content/uploads/2020/02/ledger-nano-x-500x500.png" alt="Ledger Nano X">
-        <h1>Secure Your Crypto</h1>
-        <p>Leading hardware wallets to secure your cryptocurrencies.</p>
+        <h1>Compare Ledger Hardware Wallets</h1>
+        <p>Find the best Ledger hardware wallet to secure your cryptocurrencies.</p>
     </div>
 
-    <div class="products">
+    <div class="comparison">
         <h2>Our Products</h2>
-        <div class="product">
-            <img src="https://www.ledger.com/wp-content/uploads/2020/02/ledger-nano-x-500x500.png" alt="Ledger Nano X">
-            <h3><a href="https://shop.ledger.com/products/ledger-nano-x?r=928ec58545b3&tracker=MY_TRACKER" target="_blank">Ledger Nano X</a></h3>
-            <p>The Ledger Nano X is a Bluetooth enabled secure device.</p>
-        </div>
-        <div class="product">
-            <img src="https://www.ledger.com/wp-content/uploads/2020/02/ledger-nano-s-500x500.png" alt="Ledger Nano S">
-            <h3><a href="https://shop.ledger.com/products/ledger-nano-s?r=928ec58545b3&tracker=MY_TRACKER" target="_blank">Ledger Nano S</a></h3>
-            <p>The Ledger Nano S is the original hardware wallet.</p>
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Ledger Nano S</th>
+                        <th>Ledger Nano X</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Image</strong></td>
+                        <td><img src="https://www.ledger.com/wp-content/uploads/2020/02/ledger-nano-s-500x500.png" alt="Ledger Nano S"></td>
+                        <td><img src="https://www.ledger.com/wp-content/uploads/2020/02/ledger-nano-x-500x500.png" alt="Ledger Nano X"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Price</strong></td>
+                        <td><a href="https://shop.ledger.com/products/ledger-nano-s?r=928ec58545b3&tracker=MY_TRACKER" target="_blank">$59</a></td>
+                        <td><a href="https://shop.ledger.com/products/ledger-nano-x?r=928ec58545b3&tracker=MY_TRACKER" target="_blank">$119</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Connectivity</strong></td>
+                        <td>USB</td>
+                        <td>Bluetooth, USB</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Supported Coins</strong></td>
+                        <td>1,500+</td>
+                        <td>5,500+</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Apps Installed</strong></td>
+                        <td>Up to 3</td>
+                        <td>Up to 100</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Battery</strong></td>
+                        <td>No</td>
+                        <td>Yes (8 hours)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Secure Element</strong></td>
+                        <td>CC EAL5+</td>
+                        <td>CC EAL5+</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
