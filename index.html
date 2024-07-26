@@ -72,7 +72,8 @@
             color: white;
         }
         .table td img {
-            width: 100px;
+            width: 100%;
+            max-width: 150px;
             height: auto;
         }
         .shop-now {
@@ -101,28 +102,19 @@
             text-align: center;
             background: #fff;
         }
-        @media (max-width: 768px) {
-            nav ul li {
-                display: block;
-                margin: 10px 0;
+        @media screen and (max-width: 768px) {
+            .table th, .table td {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+            .table-container {
+                padding: 0 10px;
             }
             .hero h1 {
                 font-size: 2em;
             }
-            .table-container {
-                display: block;
-                width: 100%;
-                overflow-x: auto;
-            }
-            .table th, .table td {
-                padding: 10px;
-            }
-            .table td img {
-                width: 75px;
-            }
-            .shop-now {
-                padding: 8px 16px;
-                font-size: 14px;
+            .comparison h2 {
+                font-size: 1.5em;
             }
         }
     </style>
@@ -204,11 +196,8 @@
         </div>
     </div>
 
-    <!-- Additional comparison tables -->
-
     <footer>
         <p>&copy; 2024 Ledger. All rights reserved. <a href="https://shop.ledger.com/?r=928ec58545b3" target="_blank" style="color: #fff; text-decoration: none;">Visit Ledger</a></p>
     </footer>
 </body>
 </html>
-
