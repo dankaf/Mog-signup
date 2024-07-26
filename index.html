@@ -53,10 +53,11 @@
             display: flex;
             justify-content: center;
             margin: 20px 0;
+            overflow-x: auto;
         }
         .table {
             border-collapse: collapse;
-            width: 90%;
+            width: 100%;
             max-width: 1000px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -71,7 +72,7 @@
             color: white;
         }
         .table td img {
-            width: 150px;
+            width: 100px;
             height: auto;
         }
         .shop-now {
@@ -99,6 +100,30 @@
             margin-top: 10px;
             text-align: center;
             background: #fff;
+        }
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .table-container {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+            }
+            .table th, .table td {
+                padding: 10px;
+            }
+            .table td img {
+                width: 75px;
+            }
+            .shop-now {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -179,278 +204,11 @@
         </div>
     </div>
 
-    <div class="comparison">
-        <h2>Overview</h2>
-        <div class="table-container">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Ledger Nano S Plus</th>
-                        <th>Ledger Nano X</th>
-                        <th>Ledger Stax</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Uncompromised Security</strong></td>
-                        <td>✓</td>
-                        <td>✓</td>
-                        <td>✓</td>
-                    </tr>
-                    <tr>
-                        <td><strong>NFTs and 1000+ coins supported</strong></td>
-                        <td>✓</td>
-                        <td>✓</td>
-                        <td>✓</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Compatible with Ledger Live app</strong></td>
-                        <td>✓</td>
-                        <td>✓</td>
-                        <td>✓</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Bluetooth® mobile connection</strong></td>
-                        <td>-</td>
-                        <td>✓</td>
-                        <td>✓</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Customizable lock screen</strong></td>
-                        <td>-</td>
-                        <td>✓</td>
-                        <td>✓</td>
-                    </tr>
-                      <tr>
-                        <td><strong>Curved E Ink® touch screen</strong></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>✓</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Wireless charging</strong></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>✓</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Embedded magnets</strong></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>✓</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="comparison">
-        <h2>Hardware</h2>
-        <div class="table-container">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Ledger Nano S Plus</th>
-                        <th>Ledger Nano X</th>
-                        <th>Ledger Stax</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Screen Type</strong></td>
-                        <td>OLED</td>
-                        <td>OLED</td>
-                        <td>E Ink®</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Screen Resolution</strong></td>
-                        <td>128x64 px</td>
-                        <td>128x64 px</td>
-                        <td>400x672 px</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Touchscreen</strong></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>✓</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Bluetooth®</strong></td>
-                        <td>-</td>
-                        <td>✓</td>
-                        <td>✓</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Wireless charging</strong></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>Qi charging</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Connector</strong></td>
-                        <td>USB-C</td>
-                        <td>USB-C</td>
-                        <td>USB-C</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="comparison">
-        <h2>Ledger Live Compatibility</h2>
-        <div class="table-container">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Ledger Nano S Plus</th>
-                        <th>Ledger Nano X</th>
-                        <th>Ledger Stax</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Windows</strong></td>
-                        <td>Windows 10+</td>
-                        <td>Windows 10+</td>
-                        <td>Windows 10+</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Apple macOS</strong></td>
-                        <td>macOS 12+</td>
-                        <td>macOS 12+</td>
-                        <td>macOS 12+</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Linux</strong></td>
-                        <td>Ubuntu LTS 20.04+</td>
-                        <td>Ubuntu LTS 20.04+</td>
-                        <td>Ubuntu LTS 20.04+</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Android</strong></td>
-                        <td>Android 10+</td>
-                        <td>Android 10+</td>
-                        <td>Android 10+</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Apple iOS</strong></td>
-                        <td>-</td>
-                        <td>iOS 13+</td>
-                        <td>iOS 13+</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Ledger Live app (NFTs)</strong></td>
-                        <td>Ethereum and Polygon NFTs</td>
-                        <td>Ethereum and Polygon NFTs</td>
-                        <td>Ethereum and Polygon NFTs</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Third-Party wallet (coins)</strong></td>
-                        <td>5000+ coins</td>
-                        <td>5000+ coins</td>
-                        <td>5000+ coins</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Third-Party wallet (NFTs)</strong></td>
-                        <td>Multi-blockchain NFTs</td>
-                        <td>Multi-blockchain NFTs</td>
-                        <td>Multi-blockchain NFTs</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="comparison">
-        <h2>Digital Assets Support</h2>
-        <div class="table-container">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Ledger Nano S Plus</th>
-                        <th>Ledger Nano X</th>
-                        <th>Ledger Stax</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Ledger Live app (coins)</strong></td>
-                        <td>500+ coins</td>
-                        <td>500+ coins</td>
-                        <td>500+ coins</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="comparison">
-        <h2>Security</h2>
-        <div class="table-container">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Ledger Nano S Plus</th>
-                        <th>Ledger Nano X</th>
-                        <th>Ledger Stax</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Secure Element chip</strong></td>
-                        <td>Certified Secure Element (CC EAL6+)</td>
-                        <td>Certified Secure Element (CC EAL5+)</td>
-                        <td>Certified Secure Element (CC EAL6+)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>PIN protection</strong></td>
-                        <td>✓</td>
-                        <td>✓</td>
-                        <td>✓</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Recovering access to assets</strong></td>
-                        <td>24-word Secret Recovery Phrase</td>
-                        <td>24-word Secret Recovery Phrase</td>
-                        <td>24-word Secret Recovery Phrase</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="comparison">
-        <h2>Third-Party Support</h2>
-        <div class="table-container">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Ledger Nano S Plus</th>
-                        <th>Ledger Nano X</th>
-                        <th>Ledger Stax</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Third-party wallets</strong></td>
-                        <td>Compatible with 50+ wallets</td>
-                        <td>Compatible with 50+ wallets</td>
-                        <td>Compatible with 50+ wallets</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    <!-- Additional comparison tables -->
 
     <footer>
         <p>&copy; 2024 Ledger. All rights reserved. <a href="https://shop.ledger.com/?r=928ec58545b3" target="_blank" style="color: #fff; text-decoration: none;">Visit Ledger</a></p>
     </footer>
 </body>
 </html>
+
